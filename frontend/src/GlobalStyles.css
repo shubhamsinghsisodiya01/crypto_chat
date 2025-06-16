@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background-color: #1e1e1e; /* Slightly lighter dark for contrast */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 90%;
+  min-width: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.app-header {
+  background-color: #282c34; /* Darker header */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #61dafb; /* Accent color */
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 0px; /* Safari and Chrome */
+}
